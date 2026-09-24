@@ -1,0 +1,26 @@
+Task 01
+git switch -c station-upgrade
+
+Task 02
+mkdir results
+
+Task 03
+touch results/summary.md
+echo "Analysis of the first field season." >> results/summary.md
+
+Task 04
+touch results/summary.md
+echo "Analysis of the first field season." >> results/summary.md
+
+Task 05
+mv data/sensor-readings.csv data/station-data.csv
+
+Task 06
+mkdir scripts/archive && cp scripts/*.py scripts/archive/
+
+Task 07
+rm docs/notes.md
+
+Task 08
+git add .
+git commit -m "Update station files"
