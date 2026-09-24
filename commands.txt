@@ -9,8 +9,8 @@ touch results/summary.md
 echo "Analysis of the first field season." >> results/summary.md
 
 Task 04
-touch results/summary.md
-echo "Analysis of the first field season." >> results/summary.md
+git add results
+git commit -m "Add results directory"
 
 Task 05
 mv data/sensor-readings.csv data/station-data.csv
