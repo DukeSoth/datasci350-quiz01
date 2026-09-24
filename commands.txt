@@ -152,3 +152,20 @@ git add commands.txt
 git commit -m "Save command log before merge"
 git switch main
 git merge station-upgrade
+
+Task 19
+git log --oneline
+
+35cd9d2 (HEAD -> main, station-upgrade) Save command log before merge
+2a20974 Update analysis
+586ad97 Add gitignore
+632e101 Update station files
+bb0d360 Add results directory
+a22b29e (origin/main, origin/HEAD) docs(readme): note committing commands.txt before task 18 and force push for bonus 2
+b645f85 feat: quiz 01 starter files
+steve_wkv5561@3EyedRaven:~/datasci350-quiz01$ 
+
+Task 20
+git add commands.txt
+git commit -m "Add command log"
+git push origin main station-upgrade
