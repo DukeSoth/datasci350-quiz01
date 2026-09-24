@@ -24,3 +24,121 @@ rm docs/notes.md
 Task 08
 git add .
 git commit -m "Update station files"
+
+Task 09
+touch .gitignore
+echo "temp/" >> .gitignore
+echo "log?.txt" >> .gitignore
+
+Task10
+cat .gitignore
+
+Task 11
+git add .gitignore && git commit -m "Add gitignore"
+
+Task 12
+touch log{1..4}.txt
+
+Task 13
+git status
+
+Output:
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+The four log files do not appear because log?.txt in .gitignore matches their names, we ignored them, and Git ignores these untracked files.
+
+Task 14
+wc -l < data/station-data.csv >> results/summary.md
+
+Task 15
+nano scripts/03-plot.py
+git diff
+
+diff --git a/commands.txt b/commands.txt
+index c22ab6f..27671cb 100644
+--- a/commands.txt
++++ b/commands.txt
+@@ -24,3 +24,37 @@ rm docs/notes.md
+ Task 08
+ git add .
+ git commit -m "Update station files"
++
++Task 09
++touch .gitignore
++echo "temp/" >> .gitignore
++echo "log?.txt" >> .gitignore
++
++Task10
++cat .gitignore
++
++Task 11
++git add .gitignore && git commit -m "Add gitignore"
++
++Task 12
++touch log{1..4}.txt
++
++Task 13
++git status
++
++Output:
++On branch main
++Your branch is ahead of 'origin/main' by 3 commits.
++  (use "git push" to publish your local commits)
++
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git restore <file>..." to discard changes in working directory)
++        modified:   commands.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++The four log files do not appear because log?.txt in .gitignore matches their names, we ignored them, and Git ignores these untracked files.
++
++Task 14
++wc -l < data/station-data.csv >> results/summary.md
+diff --git a/results/summary.md b/results/summary.md
+index 295821a..5d5458e 100644
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++The four log files do not appear because log?.txt in .gitignore matches their names, we ignored them, and Git ignores these untracked files.
++
++Task 14
++wc -l < data/station-data.csv >> results/summary.md
+diff --git a/results/summary.md b/results/summary.md
+index 295821a..5d5458e 100644
+--- a/results/summary.md
+--- a/results/summary.md
+--- a/results/summary.md
++++ b/results/summary.md
+@@ -1 +1,2 @@
+ Analysis of the first field season.
++41
+diff --git a/scripts/03-plot.py b/scripts/03-plot.py
+index 70ea841..1a29031 100644
+--- a/scripts/03-plot.py
++++ b/scripts/03-plot.py
+@@ -1,6 +1,6 @@
+ # Plot the daily temperature readings
+ # Prints a simple text chart, one bar per reading.
+-
++# Reviewed for the field season report
+ from pathlib import Path
+ 
+ DATA_FILE = Path("data") / "sensor-readings.csv"
+
+
+
+Explain: Lines beginning with + show added content compared with the staged version
+
+Task 16
+
