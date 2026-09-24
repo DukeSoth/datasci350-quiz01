@@ -141,4 +141,14 @@ index 70ea841..1a29031 100644
 Explain: Lines beginning with + show added content compared with the staged version
 
 Task 16
+git add .
+git commit -m "Update analyss"
 
+Task 17
+git commit --amend -m "Update analysis"
+
+Task 18
+git add commands.txt
+git commit -m "Save command log before merge"
+git switch main
+git merge station-upgrade
